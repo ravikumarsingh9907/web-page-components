@@ -12,7 +12,15 @@
     height: 100%;
     width: 27%;
     box-shadow: 0px 10px 30px -7px;
+    transform: translate(-100%);
+    background-color: #fff;
+    transition: 0.3s linear;
 }
+
+.show-btn {
+    transform: translate(0%);
+}
+
 
 .content-up {
     display: flex;
@@ -28,6 +36,25 @@
     font-size: 40px;
     margin-left: 48%;
 }
+.close-btn2{
+    font-size: 25px;
+    background: transparent;
+    position: absolute;
+    top: 2%;
+    left: 85%;
+}
+.close-btn2:hover{
+    font-size: 35px;
+    transition: 0.3s ease-out;
+    background-color: hotpink;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    padding-top: 5px;
+    border-radius: 14px;
+}
+
 .content-down{
     padding: 10px;
     text-align: center;
@@ -78,6 +105,27 @@
 
 .social-links ul li:hover {
     font-size: 45px;
+    transition: 0.3s ease-out;
+    background-color: hotpink;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    padding-top: 5px;
+    border-radius: 14px;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 2%;
+    left: 24%;
+    font-size: 25px;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.menu-btn:hover {
+    font-size: 35px;
     transition: 0.3s ease-out;
     background-color: hotpink;
     color: #fff;
