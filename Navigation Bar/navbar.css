@@ -1,106 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 *{
     padding: 0%;
     margin: 0%;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar {
+    box-shadow: 0px 0px 14px 0px rgb(0 0 0 / 75%);
+    padding: 10px;
 }
 
-.nav-content {
+.nav-list {
+    height: 0px;
+    overflow: hidden;
+    transition: 0.3s linear; 
+}
+.show-list {
+    height: 346px;
+}
+
+.nav-center {
     display: flex;
-    justify-content: center;
-    max-width: 100%;
     align-items: center;
-    height: 4rem;
-    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    justify-content: space-between;
 }
 
+.logo {
+    text-transform: uppercase;
+    margin-right: 1px;
+}
 
-.right-data {
+.logo span {
+    color: violet;
+    margin-right: 0px;
+}
+
+.Btn {    background: transparent;
+    border: none;
+}
+
+.Btn i {
+    font-size: 30px;
     display: flex;
-    width: 70%;
-    margin-left: 30px;
+    align-items: center;
 }
 
-.right-data ul {
-    display: flex;
+.nav-links {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;    
 }
 
-.right-data ul li {
+.nav-links ul {
     list-style: none;
-    padding: 10px;
-    margin: 0px 8px;
-    font-size: 20px;
-    color: #34495e;
+    text-transform: uppercase;
 }
-
-.right-data ul li:hover{
-    cursor: pointer;
-    font-size: 25px;
-    transition: 0.5s ease-out;
-    color: violet;
-}
-
-.left-data {
-    width: 35%;
-    display: flex;
-}
-
-.login-btn {
-margin: auto;
-}
-
-.search-bar button{
-    border: none;
-    background: transparent;
-    position: absolute;
-    top: 2%;
-}
-
-.login-btn button {
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    margin-left: -15px;
-    background-color: #34495e;
-    padding: 10px;
-    color: #fff;
-}
-
-.login-btn button:hover {
-    cursor: pointer;
-    font-size: 25px;
-    transition: 0.5s ease-out;
-    color: #34495e;
+.nav-links ul li:hover {
     background-color: violet;
+    color: white;
+    transition: 0.3s ease-out;
+    cursor: pointer;
 }
 
-.search-bar button i {
-    font-size: 35px;
-    color: #34495e;
-}
-.search-bar button i:hover{
-    color: violet;
-    transition: 0.5s ease-out;
-    font-size: 40px;
-}
-
-.search-bar input {
-    font-size: 20px;
+.styless {
     padding: 10px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: #34495e;
+}
+
+.social-links {
+    text-align: center;
+    padding: 5px;
+    align-items: center;
+}
+
+.social-links ul {
+    list-style: none;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+}
+.social-links ul li:hover {
+    background-color: violet;
+    color: white;
+    font-size: 22px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.stylesss {
+    padding: 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    outline-style: none;
+    background: #eee;
+    /* opacity: 15%; */
+    position: relative;
+    left: 20px;
+    color: black;
+}
+.search input:hover {
+    background-color: violet;
+    color: white;
+    border: none;
     outline-style: none;
 }
 
-.search-bar input:hover {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: violet;
+.btn-2 {
+    font-size: 23px;
+    position: relative;
+    background: black;
+    right: 16px;
+    bottom: -4px;
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    
 }
+.btn-2:hover {
+    background-color: violet;
+    cursor: pointer;
+}
+
+.btn-2 i {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+@media screen and (min-width: 1100px) {
+ .navbar {
+    height: 3.5rem;
+     padding: 8px;
+ }
+    .nav-header {
+    display: flex;
+    align-items: center;
+ }
+
+ .Btn {
+     display: none;
+ }
+
+ .nav-list {
+     width: 100%;
+     height: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .nav-links ul {
+     display: flex;
+     text-transform: uppercase;
+ }
+ .social-links {
+     display: flex;
+ }
+
+ .social-links ul{
+    display: flex;
+ }
+
+ .nav-center {
+    margin-right: 1.5rem;
+    padding: 0%;
+    height: auto;
+ }
+
+}
+
