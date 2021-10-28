@@ -1,0 +1,135 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.toggle-btn {
+  padding: 2rem;
+  justify-content: center;
+  text-align: right;
+  align-items: center;
+}
+
+.btn button {
+  font-size: 25px;
+  background-color: transparent;
+  border-style: dotted;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  padding: 5px 25px;
+  border-color: violet;
+  color: violet;
+}
+
+.main-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  border-style: double;
+  padding: 2rem 1rem;
+  border-color: violet;
+  border-radius: 1rem;
+  background-color: lavenderblush;
+  display: none;
+}
+.showlinks {
+  display: block;
+}
+
+.name-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.name-btn h2 {
+  padding: 0px 10px;
+  width: 100%;
+  color: violet;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5%;
+  left: 85%;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: violet;
+}
+
+.input-section {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.username-sec {
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 20px;
+}
+
+label {
+  padding: 5px;
+}
+
+.username-data {
+  padding: 5px 10px;
+  border-radius: 1rem;
+  border-style: dotted;
+  font-size: 18px;
+  background-color: lavender;
+}
+
+.password-sec {
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 20px;
+}
+
+.password-data {
+  padding: 5px 10px;
+  border-radius: 1rem;
+  border-style: dotted;
+  font-size: 18px;
+  background: lavender;
+}
+
+.submit-btn button {
+  font-size: 20px;
+  padding: 5px 25px;
+  text-transform: capitalize;
+  background-color: violet;
+  border-radius: 1rem;
+  border-style: dotted;
+  width: 100%;
+}
+
+.reset-password {
+  padding: 10px;
+  width: 100%;
+}
+
+.reset-password a {
+  text-decoration: none;
+}
+
+.singup {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+.singup a {
+  padding: 0px 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
