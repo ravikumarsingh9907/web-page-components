@@ -42,17 +42,16 @@
   border-radius: 1rem;
   width: 80%;
   justify-self: end;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 
 .profile-pic img {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
-  box-shadow: 0px 4px 13px 0px hotpink;
 }
 
 .profile-data {
-  width: 50%;
   font-size: 20px;
   align-self: end;
   height: 80%;
@@ -60,7 +59,7 @@
   grid-column: 2/4;
   width: 85%;
   border-radius: 1rem;
-  box-shadow: 0px 0px 8px hotpink;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 
 .name-2 {
@@ -89,14 +88,13 @@
   border-radius: 1rem 0rem 1rem 0rem;
   justify-self: start;
   align-self: end;
-  width: 81.5%;
-  box-shadow: 0px 0px 8px hotpink;
+  width: 81.3%;
   opacity: 100%;
   color: hotpink;
 }
 
 .social-links i {
-  font-size: 3rem;
+  font-size: 3vw;
   margin: auto;
 }
 
@@ -117,10 +115,17 @@
   width: 53%;
   margin: auto;
   padding-bottom: 0.5rem;
-  font-size: 2vw;
+  font-size: 1.5vw;
+  text-decoration: underline;
 }
 
 .about p {
+  width: 53%;
+  margin: auto;
+  font-size: 1.4vw;
+}
+
+.detail-location p {
   width: 53%;
   margin: auto;
   font-size: 1.4vw;
@@ -140,26 +145,41 @@
   font-size: 1.5vw;
   padding-bottom: 0.5vw;
   color: hotpink;
+  text-decoration: underline;
 }
 
 .location p {
-  width: 58%;
-  font-size: 1.4vw;
+  width: 60%;
+  padding: 0.5vw;
+  font-size: 1.2vw;
   color: hotpink;
 }
 
 .ratings {
-  width: 80%;
+  width: 47%;
   margin: auto;
   text-align: center;
+  display: flex;
+  position: relative;
+  padding: 0.4vw 0vw;
 }
 
-.ratings h2 {
-  width: 72%;
-  font-size: 2vw;
+.ratings .profile-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.6vw;
+  padding: 0vw 0.8vw;
   color: hotpink;
 }
 
+.ratings .profile-btn i {
+  display: flex;
+}
+
+.ratings p {
+  font-size: 1.6vw;
+  color: #fff;
+}
 /* Samples */
 
 .sec-2 {
@@ -190,4 +210,8 @@
   margin: auto;
   background-color: black;
   border-radius: 10px;
+}
+
+.detail-location span {
+  color: #fff;
 }
