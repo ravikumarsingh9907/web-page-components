@@ -5,10 +5,6 @@
   margin: 0%;
 }
 
-.sec-1 {
-  height: 120vh;
-}
-
 .blur {
   position: absolute;
   height: 100%;
@@ -17,6 +13,7 @@
   background-position: center;
   background-size: cover;
   filter: blur(8px);
+  z-index: -100;
 }
 
 .container {
@@ -27,10 +24,6 @@
   border: black;
   margin: 1rem 1rem;
   justify-content: center;
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%);
 }
 
 .profile-pic {
@@ -59,7 +52,8 @@
   grid-column: 2/4;
   width: 85%;
   border-radius: 1rem;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 4px 8px 0 rgba(0 0 0 / 20%);
+  background-color: #fff;
 }
 
 .name-2 {
@@ -178,7 +172,7 @@
 
 .ratings p {
   font-size: 1.6vw;
-  color: #fff;
+  color: black;
 }
 /* Samples */
 
@@ -213,5 +207,42 @@
 }
 
 .detail-location span {
-  color: #fff;
+  color: black;
+}
+
+/* Service sec */
+.sec-3 {
+  width: 100%;
+  margin: 2rem 0rem;
+}
+
+.service-data {
+  width: 80%;
+  margin: auto;
+}
+
+.service-data h2 {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0rem;
+  color: hotpink;
+  font-size: 30px;
+}
+
+/* section 3------------------------------- */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid hotpink;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: lightpink;
 }
