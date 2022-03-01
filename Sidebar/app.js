@@ -1,4 +1,4 @@
-const closeBtn = document.querySelector('.close-bar');
+const closeBtn = document.querySelector('.close-toggle');
 const showBtn = document.querySelector('.menu-btn');
 const sidebar = document.querySelector('.container');
 
